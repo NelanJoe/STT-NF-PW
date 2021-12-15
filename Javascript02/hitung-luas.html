@@ -22,9 +22,10 @@
 
     <script>
       function hitung() {
+        const phi = 3.14;
         let jari = Number(document.getElementById("jari").value);
-        let luas = 3.14 * jari * jari;
-        let kel = 2 * 3.14 * jari;
+        let luas = phi * jari * jari;
+        let kel = 2 * phi * jari;
 
         let resLuas = document.getElementById("res_luas");
         resLuas.value = `${parseInt(luas)}`;
