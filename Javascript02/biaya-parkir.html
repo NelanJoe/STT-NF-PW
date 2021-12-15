@@ -27,18 +27,18 @@
       let biaya = document.getElementById("biaya");
       function hitung() {
         lama.value = Number(keluar.value) - Number(masuk.value);
-
+        const tarifAwal = 3000;
         const tarifPerJam = 1000;
+
+        let tambahanJam = lama.value - 2;
         biaya.value = "";
 
         if (lama.value <= 1) {
-          biaya.value += 1000;
-        } else if (lama.value == 2) {
-          biaya.value += 3000;
-        } else if (lama.value == 4) {
-          biaya.value += 5000;
-        } else {
           biaya.value += tarifPerJam;
+        } else if (lama.value == 2) {
+          biaya.value += tarifAwal;
+        } else {
+          biaya.value = tarifAwal + tarifPerJam * tambahanJam;
         }
       }
     </script>
