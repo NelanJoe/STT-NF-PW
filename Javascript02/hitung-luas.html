@@ -8,9 +8,14 @@
   </head>
   <body>
     <form>
+      <h3>Menghitung Luas & Keliling Lingkaran</h3>
+      <b>Masukkan Jari - Jari Lingkaran:</b>
       <input type="number" value="0" id="jari" onchange="hitung()" />
-      <b>=</b>
+      <br />
+      <b>Luas</b>
       <input type="text" id="res_luas" />
+      <br />
+      <b>Keliling</b>
       <input type="text" id="res_kel" />
     </form>
 
@@ -21,10 +26,10 @@
         let kel = 2 * 3.14 * jari;
 
         let resLuas = document.getElementById("res_luas");
-        resLuas.value = `Luas = ${luas}`;
+        resLuas.value = `${parseInt(luas)}`;
 
         let resKel = document.getElementById("res_kel");
-        resKel.value = `Keliling = ${parseInt(kel)}`;
+        resKel.value = `${parseInt(kel)}`;
       }
     </script>
   </body>
