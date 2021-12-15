@@ -5,25 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>biaya parkir</title>
-    <style>
-      table {
-        border: 1px solid;
-        padding: 2px;
-      }
-      th {
-        border: 1px solid;
-      }
-      td {
-        border: 1px solid;
-      }
-    </style>
   </head>
   <body>
-
-    <input type="text" value="0" id="jamMasuk" />
-    <input type="text" value="0" id="jamKeluar" />
-    <button onclick="hitung()">hitung</button>
+    <h3>Menghitung Biaya Parkir</h3>
+    <b>Jam Masuk:</b>
+    <input type="number" value="0" id="jamMasuk" />
+    <b>Jam Keluar:</b>
+    <input type="number" value="0" id="jamKeluar" />
+    <br />
+    <button onclick="hitung()">Hitung</button>
+    <br />
+    <b>Lama Parkir: </b>
     <input type="text" id="lama" />
+    <b>Biaya Parkir: </b>
     <input type="text" id="biaya" />
 
     <script>
@@ -33,22 +27,20 @@
       let biaya = document.getElementById("biaya");
       function hitung() {
         lama.value = Number(keluar.value) - Number(masuk.value);
+
+        const tarifPerJam = 1000;
         biaya.value = "";
 
-        if (lama.value == 1) {
-          biaya.value += 1500;
+        if (lama.value <= 1) {
+          biaya.value += 1000;
         } else if (lama.value == 2) {
           biaya.value += 3000;
         } else if (lama.value == 4) {
           biaya.value += 5000;
         } else {
-          return 0;
+          biaya.value += tarifPerJam;
         }
-        console.log(biaya.value);
       }
-
-      hitung();
-
     </script>
   </body>
 </html>
