@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <nav
+      style="
+        background-color: rgb(239, 183, 111);
+        padding-top: 10px;
+        padding-bottom: 10px;
+      "
+    >
+      <a
+        style="
+          float: left;
+          margin-top: -1px;
+          margin-left: 20px;
+          color: white;
+          align-content: center;
+          font-size: 36px;
+          text-decoration: none;
+        "
+        href="./cart.html"
+        >Toko Bagus</a
+      >
+      <ul style="display: flex; list-style-type: none; gap: 10px">
+        <li>
+          <a href="#" style="text-decoration: none; color: white">Home</a>
+        </li>
+        <li>
+          <a href="#" style="text-decoration: none; color: white"
+            >Current event</a
+          >
+        </li>
+        <li>
+          <a href="#" style="text-decoration: none; color: white">Contact us</a>
+        </li>
+        <li>
+          <img src="./assets/icon/btn_cart.svg" alt="" />
+        </li>
+        <li>
+          <img src="./assets/icon/btn_src.svg" alt="" />
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Your Cart</h1>
+      <table style="width: 50%; border-collapse: collapse; margin-bottom: 20px">
+        <thead>
+          <tr>
+            <th
+              align="left"
+              style="border-top: 1px solid #000; border-bottom: 1px solid #000"
+            >
+              Price
+            </th>
+            <th
+              align="left"
+              style="border-top: 1px solid #000; border-bottom: 1px solid #000"
+            >
+              Items
+            </th>
+            <th
+              align="left"
+              style="border-top: 1px solid #000; border-bottom: 1px solid #000"
+            >
+              Quantity
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="display: flex; align-items: center">
+              <img
+                style="height: 200px"
+                src="assets/img/t-shirts.png"
+                alt="t-shirt"
+              />
+              <div style="flex-wrap: nowrap; line-height: 4px">
+                <p>T-shirts</p>
+                <p>Small</p>
+              </div>
+            </td>
+            <td>
+              <b>$20.00</b>
+            </td>
+            <td>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td
+              colspan="3"
+              align="right"
+              style="border-top: 1px solid #000; border-bottom: 1px solid #000"
+            >
+              Subtotal :
+              <b>$20.00</b>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <aside style="float: right; margin-right: 22%; margin-top: -24%">
+      <table style="background-color: #e5e5e5; width: 300px; height: 278px">
+        <thead>
+          <th>Summary (1 item)</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Subtotal</td>
+            <td style="text-align: right">$20.00</td>
+          </tr>
+
+          <tr>
+            <td>Shipping</td>
+            <td style="text-align: right">-</td>
+          </tr>
+          <tr>
+            <td>Est. Toxes</td>
+            <td style="text-align: right">-</td>
+          </tr>
+          <tr>
+            <td>
+              <hr style="border: 2px solid #fff; width: 200%;" />
+            </td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td style="text-align: right">$20.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <button
+        style="
+          border: none;
+          padding: 15px 61px;
+          background-color: deepskyblue;
+          margin-top: 10px;
+          width: 100%;
+        "
+      >
+        <a style="text-decoration: none; color: white" href="/checkout.html">
+          Checkout
+        </a>
+      </button>
+    </aside>
+    <footer
+      style="
+        background-color: rgb(239, 183, 111);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20%;
+      "
+    >
+      <ul
+        style="
+          display: flex;
+          list-style: none;
+          gap: 10px;
+          justify-content: center;
+        "
+      >
+        <li>
+          <a style="text-decoration: none; color: white" href="">Credits</a>
+        </li>
+        <li>
+          <a style="text-decoration: none; color: white" href=""
+            >Terms of Sevice</a
+          >
+        </li>
+        <li>
+          <a style="text-decoration: none; color: white" href="">Blog index</a>
+        </li>
+      </ul>
+      <p style="text-align: center">Copyright &copy; Nelan</p>
+    </footer>
+  </body>
+</html>

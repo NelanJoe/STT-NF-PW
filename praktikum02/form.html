@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .inputform {
+        line-height: 20px;
+        margin-top: 10px;
+      }
+    </style>
+    <title>coba</title>
+  </head>
+  <body>
+    <nav style="display: flex; background-color: #9b35f6">
+      <div style="margin: auto">
+        <h2 style="color: white">Toko Bagus</h2>
+      </div>
+      <div style="margin: auto">
+        <ul style="display: flex; gap: 20px; list-style: none">
+          <li>
+            <a href="http://" style="text-decoration: none; color: white"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="http://" style="text-decoration: none; color: white"
+              >Generate Link</a
+            >
+          </li>
+          <li>
+            <a href="http://" style="text-decoration: none; color: white"
+              >Transaction History</a
+            >
+          </li>
+          <li>
+            <a href="http://" style="text-decoration: none; color: white"
+              >Policy</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button
+        style="
+          border: 2px solid #fff;
+          margin: auto;
+          color: white;
+          background-color: #9b35f6;
+          padding: 10px 20px;
+        "
+      >
+        Log in
+      </button>
+    </nav>
+    <!-- Main Content -->
+    <main style="margin: 5em 20em">
+      <form>
+        <div style="display: flex; gap: 20px">
+          <div>
+            <img
+              src="./assets/img/sepatu.jpg"
+              style="width: 250px; height: 250px; border: 2px solid #000"
+              alt="masih kosong gan"
+            />
+            <button
+              type="submit"
+              style="
+                background-color: #9b35f6;
+                color: #fff;
+                border: 1px solid #cacaca;
+                display: block;
+                margin-top: 10px;
+                margin-bottom: auto;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px 20px;
+              "
+            >
+              Upload Picture
+            </button>
+          </div>
+
+          <div class="inputform" style="line-height: 30px">
+            <div>
+              <label for="">Merk :</label>
+              <input type="text" placeholder="Nike" />
+            </div>
+            <div>
+              <label for="">Description :</label>
+              <br />
+              <textarea
+                name=""
+                id=""
+                maxlength="400"
+                cols="30"
+                rows="10"
+                placeholder="tidak lebih dari 400 karakter"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label for="">Account Number :</label>
+              <input type="number" placeholder="123-1231-3453" />
+            </div>
+            <div>
+              <label for="">Bank :</label>
+              <select name="" id="">
+                <option value="BRI">BRI</option>
+                <option value="Mandiri">Mandiri</option>
+                <option value="Cimb">Cimb Niaga</option>
+                <option value="BCA">BCA</option>
+              </select>
+            </div>
+            <div>
+              <label for="">Account Holder :</label>
+              <input type="number" placeholder="Namamu" />
+            </div>
+            <div>
+              <label for="">Transaction :</label>
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <br />
+              <div style="padding-right: 20px;">
+                <label for="">*Lorem ipsum, dolor sit amet cons</label>
+                <br />
+                <div>
+                  <input type="checkbox" checked />
+                  <label for="">send to mobile phone</label>
+                </div>
+                <div>
+                  <input type="checkbox" checked />
+                  <label for="">send to mobile email</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="">Send to Mobile Phone</label>
+              <input type="number" name="" id="" />
+            </div>
+            <div>
+              <label for="">Send to Email</label>
+              <input type="email" name="" id="" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer style="background-color: #9b35f6; padding: 20px">
+      <div style="text-align: center; color: white">
+        Ini Di Buat Oleh &copy; Nelan
+      </div>
+    </footer>
+  </body>
+</html>

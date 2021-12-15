@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 2</title>
+  </head>
+  <body>
+    <form action="./data_succes.html">
+      <h1>Black Gosed | Pizza-On-Demand</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+        laboriosam at aliquam, inventore labore repellendus necessitatibus optio
+        nostrum, libero, alias sunt ab sint nihil esse nam rerum. Doloremque,
+        ullam obcaecati.
+      </p>
+      <fieldset>
+        <legend>Your Information</legend>
+        <div>
+          <label for="name">Name: </label>
+          <input id="name" type="text" placeholder="masukkan namamu" required />
+        </div>
+        <br />
+        <div>
+          <label for="address">Adress</label>
+          <input
+            id="adress"
+            type="text"
+            placeholder="Isiin alamatmu dong wkwk"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="telephone-number">Telephone Number</label>
+          <input type="number" placeholder="+62" required/>
+        </div>
+        <br />
+        <div>
+          <label for="e-mail">E-mail</label>
+          <input type="email" placeholder="isiin email" required/>
+        </div>
+
+        <div>
+          <label for="delivery-instruction">Delivery Instruction</label>
+          <br />
+          <textarea
+            name=""
+            id=""
+            maxlength="400"
+            cols="30"
+            rows="10"
+            placeholder="tidak lebih dari 400 karakter"
+            required
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <b>Design Your Dream Pizza</b>
+          <br />
+          Pizza specs
+        </legend>
+
+        <div title="Crust">
+          <p>Crust (choose one):</p>
+          <div>
+            <input type="radio" name="crust" />
+            <label for="">Classic white</label>
+          </div>
+          <div>
+            <input type="radio" name="crust" />
+            <label for="">Multrigrain</label>
+          </div>
+          <div>
+            <input type="radio" name="crust" />
+            <label for="">Chesse-stuffed crust</label>
+          </div>
+          <div>
+            <input type="radio" name="crust" />
+            <label for="">Gluten free</label>
+          </div>
+        </div>
+
+        <div title="topping">
+          <p>Toppings (Choose as many as you want):</p>
+          <div>
+            <input type="checkbox" checked />
+            <label for="">Red Sauce</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label for="">White Sauce</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label for="">Mozzarella Cheese</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label for="">Mozzzzz</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for=""
+          >Number
+          <br />
+          How many pizza</label
+        >
+        <select id="">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+      <br />
+      <br />
+      <input type="submit" value="Bring me a pizza" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>

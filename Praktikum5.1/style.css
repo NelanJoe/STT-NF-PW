@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box-wrapper {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+}
+.box1 {
+  width: 8em;
+  height: 40em;
+  background-color: aqua;
+}
+.box2 {
+  width: 8em;
+  height: 40em;
+  background-color: rgb(253, 56, 56);
+}
+.box3 {
+  width: 8em;
+  height: 40em;
+  background-color: rgb(46, 49, 206);
+}
+.box4 {
+  width: 8em;
+  height: 40em;
+  background-color: rgb(145, 11, 145);
+}
