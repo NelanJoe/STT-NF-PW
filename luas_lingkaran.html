@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung Luas Lingkaran</title>
+  </head>
+  <body>
+    <form>
+      <input type="number" value="0" id="jari" onchange="hitung()" />
+      <b>=</b>
+      <input type="text" id="res_luas" />
+      <input type="text" id="res_kel" />
+    </form>
+
+    <script>
+      function hitung() {
+        let jari = Number(document.getElementById("jari").value);
+        let luas = 3.14 * jari * jari;
+        let kel = 2 * 3.14 * jari;
+
+        let resLuas = document.getElementById("res_luas");
+        resLuas.value = `Luas = ${luas}`;
+
+        let resKel = document.getElementById("res_kel");
+        resKel.value = `Keliling = ${parseInt(kel)}`;
+      }
+    </script>
+  </body>
+</html>

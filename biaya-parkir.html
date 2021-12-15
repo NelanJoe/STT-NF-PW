@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>biaya parkir</title>
+    <style>
+      table {
+        border: 1px solid;
+        padding: 2px;
+      }
+      th {
+        border: 1px solid;
+      }
+      td {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+
+    <input type="text" value="0" id="jamMasuk" />
+    <input type="text" value="0" id="jamKeluar" />
+    <button onclick="hitung()">hitung</button>
+    <input type="text" id="lama" />
+    <input type="text" id="biaya" />
+
+    <script>
+      let masuk = document.getElementById("jamMasuk");
+      let keluar = document.getElementById("jamKeluar");
+      let lama = document.getElementById("lama");
+      let biaya = document.getElementById("biaya");
+      function hitung() {
+        lama.value = Number(keluar.value) - Number(masuk.value);
+        biaya.value = "";
+
+        if (lama.value == 1) {
+          biaya.value += 1500;
+        } else if (lama.value == 2) {
+          biaya.value += 3000;
+        } else if (lama.value == 4) {
+          biaya.value += 5000;
+        } else {
+          return 0;
+        }
+        console.log(biaya.value);
+      }
+
+      hitung();
+
+    </script>
+  </body>
+</html>

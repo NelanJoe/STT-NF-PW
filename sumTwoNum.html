@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum Two Num</title>
+  </head>
+  <body>
+    <input type="number" id="a" value="0" onchange="sumTwoNum()" />
+    <b>+</b>
+    <input type="number" id="b" value="0" onchange="sumTwoNum()" />
+    <b>=</b>
+    <input type="num" id="res_num" />
+
+    <script>
+      let a = document.getElementById("a");
+      let b = document.getElementById("b");
+      let res_num = document.getElementById("res_num");
+
+      function sumTwoNum() {
+        res_num.value = Number(a.value) + Number(b.value);
+      }
+    </script>
+  </body>
+</html>
