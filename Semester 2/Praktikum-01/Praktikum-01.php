@@ -53,7 +53,7 @@
                                     <td>{$num}</td>
                             ";
                             echo '</tr>';
-                            ++$nomor;
+                            $nomor++;
                         }
                         ?>
                     </tbody>
