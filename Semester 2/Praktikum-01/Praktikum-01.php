@@ -23,8 +23,8 @@
                         $header = ['No', 'Nama', 'NIM', 'UTS', 'UAS', 'Tugas', 'Nilai Akhir'];
                         foreach ($header as $jdl) {
                             echo "
-                        <th scope='col'>{$jdl}</th>
-                    ";
+                                <th scope='col'>{$jdl}</th>
+                            ";
                         }
                         ?>
                     </thead>
