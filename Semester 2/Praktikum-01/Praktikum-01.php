@@ -32,9 +32,9 @@
                         <?php
 
                         $ns_1 = ['id' => 1, 'nim' => '011022111', 'nama' => 'Budi', 'uts' => 80, 'uas' => 84, 'tugas' => 90];
-                        $ns_2 = ['id' => 1, 'nim' => '011023124', 'nama' => 'Rudi', 'uts' => 60, 'uas' => 90, 'tugas' => 80];
-                        $ns_3 = ['id' => 1, 'nim' => '011030311', 'nama' => 'Riska', 'uts' => 70, 'uas' => 85, 'tugas' => 70];
-                        $ns_4 = ['id' => 1, 'nim' => '011028313', 'nama' => 'Siska', 'uts' => 50, 'uas' => 100, 'tugas' => 90];
+                        $ns_2 = ['id' => 2, 'nim' => '011023124', 'nama' => 'Rudi', 'uts' => 60, 'uas' => 90, 'tugas' => 80];
+                        $ns_3 = ['id' => 3, 'nim' => '011030311', 'nama' => 'Riska', 'uts' => 70, 'uas' => 85, 'tugas' => 70];
+                        $ns_4 = ['id' => 4, 'nim' => '011028313', 'nama' => 'Siska', 'uts' => 50, 'uas' => 100, 'tugas' => 90];
 
                         $ar_nilai = [$ns_1, $ns_2, $ns_3, $ns_4];
                         $nomor = 1;
